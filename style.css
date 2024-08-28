@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+nav h1{
+    mix-blend-mode: difference;
+}
+.page1 {
+    height: 700%;
+    width: 100%;
+    position: relative;
+}
+
+.page1 video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.56);
+    top: 0;
+    backdrop-filter: blur(100px);
+}
+
+.EText{
+    opacity: 0;
+}
+.ECommerce:hover .EText{
+    animation-name: aniLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+.socialText{
+    opacity: 0;
+}
+.socialMedia:hover .socialText{
+    animation-name: aniRight;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.videoApp:hover .videoText{
+    animation-name: aniLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+.dummy:hover .dummyText{
+    animation-name: aniLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+.web:hover .webText{
+    animation-name: aniRight;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aniLeft {
+    from{
+        left: 0;
+        opacity: 0;
+    }
+    to{
+        left: 50%;
+        opacity: 1;
+    }
+}
+@keyframes aniRight {
+    from{
+        right: 0;
+        opacity: 0;
+    }
+    to{
+        right: 50%;
+        opacity: 1;
+    }
+}
+
